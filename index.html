@@ -7,7 +7,8 @@
 
 <h1>Bookmarklets</h1>
 <ul>
-  <li>See: <a href="https://en.wikipedia.org/wiki/Bookmarklet">Wikipedia Article</a> on bookmarklets</li>
+  <li><a href="https://en.wikipedia.org/wiki/Bookmarklet">Wikipedia Article</a> on bookmarklets</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs">MDN Article</a> on Data URIs (technical details)</li>
 </ul>
 	
 	
@@ -21,10 +22,10 @@
 <h2>Bookmarklets</h2>
 <ul>
   <h3>Extract & display page text</h3>
-  <li>This bookmarklet captures ALL text on a webpage and displays it using a data-url</li>
-  <li>Often, news website paywalls just cover up the article. This bookmarklet will allow you to read those articles.</li>
+  <li>This bookmarklet captures ALL text on a webpage and displays it as plain-text</li>
+  <li>Often, news website paywalls just cover up the article instead of actually cutting it out of the page. This bookmarklet will allow you to read those articles.</li>
   <li>
-    <a href='javascript: window.location = "data:text/plain," + encodeURIComponent(document.body.innerText ); void(0);'>
+    <a href='javascript: window.location = "data:text/plain;charset=utf-8," + encodeURIComponent(document.body.innerText ); void(0);'>
       extract text
     </a>  
   </li>
